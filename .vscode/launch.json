@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:m323}",
+      "name": "Debug m323",
+      "target": "m323",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug m323"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:m323}",
+      "name": "Release m323",
+      "target": "m323",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release m323"
+    }
+  ]
+}
