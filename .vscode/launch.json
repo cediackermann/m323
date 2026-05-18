@@ -19,6 +19,46 @@
       "target": "m323",
       "configuration": "release",
       "preLaunchTask": "swift: Build Release m323"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:m323}",
+      "name": "Debug WeDontLikeCharA",
+      "target": "WeDontLikeCharA",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug WeDontLikeCharA"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:m323}",
+      "name": "Release WeDontLikeCharA",
+      "target": "WeDontLikeCharA",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release WeDontLikeCharA"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:m323}",
+      "name": "Debug Aufgabe3",
+      "target": "Aufgabe3",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug Aufgabe3"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:m323}",
+      "name": "Release Aufgabe3",
+      "target": "Aufgabe3",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release Aufgabe3"
     }
   ]
 }

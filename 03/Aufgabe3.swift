@@ -29,7 +29,8 @@ print(calculateAverage(items: items))
 // 3.3
 
 func sortListAlphabetical(items: [String]) -> [String] {
-    return items.sorted()
+    let itemsCopy = items
+    return itemsCopy.sorted()
 }
 
 let stringItems = ["ABC", "CDF", "BDC"]
@@ -45,7 +46,9 @@ struct ComplexType {
 }
 
 func sortComplexType(items: [ComplexType]) -> [ComplexType] {
-    return items.sorted {
+    let itemsCopy = items
+
+    return itemsCopy.sorted {
         ($0.date, $0.priority, $0.title) < ($1.date, $1.priority, $1.title)
     }
 }

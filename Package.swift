@@ -11,6 +11,16 @@ let package = Package(
         .executableTarget(
             name: "m323"
         ),
+        .executableTarget(
+            name: "WeDontLikeCharA",
+            path: "02",
+            sources: ["WeDontLikeCharA.swift"]
+        ),
+        .executableTarget(
+            name: "Aufgabe3",
+            path: "03",
+            sources: ["Aufgabe3.swift"]
+        ),
         .testTarget(
             name: "m323Tests",
             dependencies: ["m323"]
