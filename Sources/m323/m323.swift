@@ -3,7 +3,7 @@
 
 @main
 struct m323 {
-    static func main() {
-        print("Hello, world!")
-    }
+  static func main() {
+    print("Hello, world!")
+  }
 }

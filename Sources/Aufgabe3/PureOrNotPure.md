@@ -4,9 +4,9 @@
 | ------- | -------------------- | ------------------------------------------------ | ----------------------------------- | ---------------- |
 | 1.1     | Ja                   | Nein                                             | Nein                                | impure           |
 | 1.2     | Ja                   | Ja                                               | Ja                                  | pure             |
-| 1.3     | Ja                   | ja                                               | Ja                                  | impure           |
+| 1.3     | Ja                   | ja                                               | Ja                                  | pure             |
 | 1.4     | Ja                   | Nein                                             | Ja                                  | impure           |
-| 1.5     | Ja                   | Ja                                               | Ja                                  | impure           |
+| 1.5     | Ja                   | Ja                                               | Ja                                  | pure             |
 | 1.6     | Ja                   | Ja                                               | Nein                                | impure           |
 
 ## Aufgabe 1.1
@@ -40,11 +40,7 @@ console.log(add(2, 4)); // Ausgabe: 6
 
 ```js
 function firstCharacter(str) {
-  if (!len(str) > 0) {
-    return str.charAt(0);
-  } else {
-    return "";
-  }
+  return str.charAt(0);
 }
 
 console.log(firstCharacter("Hello")); // Ausgabe: H
@@ -68,11 +64,7 @@ console.log(multiplyWithRandom(10, Math.random())); // Ausgabe: Eine zufällige 
 ```js
 // Funktion zum Teilen einer Zahl durch eine andere
 function divideNumbers(dividend, divisor) {
-  if (dividen != 0 && divisor != 0) {
-    return dividend / divisor;
-  } else {
-    return 0;
-  }
+  return dividend / divisor;
 }
 
 console.log(divideNumbers(10, 2)); // Ausgabe: 5

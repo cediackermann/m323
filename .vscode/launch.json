@@ -59,6 +59,26 @@
       "target": "Aufgabe3",
       "configuration": "release",
       "preLaunchTask": "swift: Build Release Aufgabe3"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:m323}",
+      "name": "Debug 01_MapUebungen",
+      "target": "01_MapUebungen",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug 01_MapUebungen"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:m323}",
+      "name": "Release 01_MapUebungen",
+      "target": "01_MapUebungen",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release 01_MapUebungen"
     }
   ]
 }
