@@ -9,15 +9,7 @@ import Foundation
 
 class LeetCode {
     func hammingWeight(_ n: Int) -> Int {
-        var weight = 0
-        let quotient = n / 2
-        weight += n % 2
-        let roundedQuotient = floor(Double(quotient))
-        if roundedQuotient != 0 {
-            weight += hammingWeight(Int(roundedQuotient))
-        }
-
-        return weight
+        return n == 0 ? 0 : (n & 1) + hammingWeight(n >> 1)
     }
 
     func singleNumber(_ nums: [Int]) -> Int {
