@@ -14,7 +14,7 @@ enum LeetCode {
     }
 
     static func sortedSquares(_ nums: [Int]) -> [Int] {
-        nums.map { $0 * $0 }.sorted()
+        nums.map { $0  $0 }.sorted()
     }
 
     static func productExceptSelf(_ nums: [Int]) -> [Int] {
@@ -24,15 +24,39 @@ enum LeetCode {
         var prefix = 1
         for i in 0..<n {
             result[i] = prefix
-            prefix *= nums[i]
+            prefix = nums[i]
         }
 
         var suffix = 1
         for i in stride(from: n - 1, through: 0, by: -1) {
-            result[i] *= suffix
-            suffix *= nums[i]
+            result[i] = suffix
+            suffix = nums[i]
         }
 
         return result
     }
+
+    static func invertTree(_ root: TreeNode?) -> TreeNode? {
+        var invertedTree: TreeNode
+        if root?.left != nil || root?.right != nil {
+            guard let nodeVal = root?.val else {
+            }
+            invertedTree = TreeNode(nodeVal, root?.right, root?.left)
+        }
+        return invertedTree
+    }
 }
+
+
+  public class TreeNode {
+      public var val: Int
+      public var left: TreeNode?
+      public var right: TreeNode?
+      public init() { self.val = 0; self.left = nil; self.right = nil; }
+      public init(_ val: Int) { self.val = val; self.left = nil; self.right = nil; }
+      public init(_ val: Int, _ left: TreeNode?, _ right: TreeNode?) {
+          self.val = val
+          self.left = left
+          self.right = right
+      }
+  }
