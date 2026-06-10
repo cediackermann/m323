@@ -1,0 +1,57 @@
+load("@rules_swift//swift:swift.bzl", "swift_binary")
+
+# One swift_binary per SwiftPM executableTarget in Package.swift.
+# (No external dependencies, so no deps to track.)
+
+swift_binary(
+    name = "m323",
+    srcs = ["Sources/m323/m323.swift"],
+)
+
+swift_binary(
+    name = "WeDontLikeCharA",
+    srcs = ["Sources/WeDontLikeCharA/main.swift"],
+)
+
+swift_binary(
+    name = "Aufgabe3",
+    srcs = ["Sources/Aufgabe3/main.swift"],
+)
+
+swift_binary(
+    name = "01_MapUebungen",
+    srcs = ["Sources/Aufgabe4/01_MapUebungen/main.swift"],
+)
+
+swift_binary(
+    name = "02_FilterUebungen",
+    srcs = ["Sources/Aufgabe4/02_FilterUebungen/main.swift"],
+)
+
+swift_binary(
+    name = "03_MapUndFilterUebungen",
+    srcs = ["Sources/Aufgabe4/03_MapUndFilterUebungen/main.swift"],
+)
+
+swift_binary(
+    name = "04_FoldLeftUebungen",
+    srcs = ["Sources/Aufgabe4/04_FoldLeftUebungen/main.swift"],
+)
+
+swift_binary(
+    name = "05_FlatMapUebungen",
+    srcs = ["Sources/Aufgabe4/05_FlatMapUebungen/main.swift"],
+)
+
+swift_binary(
+    name = "06_ForComprehensionsUebungen",
+    srcs = ["Sources/Aufgabe4/06_ForComprehensionsUebungen/main.swift"],
+)
+
+swift_binary(
+    name = "LeetCode",
+    srcs = [
+        "Sources/LeetCode/LeetCode.swift",
+        "Sources/LeetCode/main.swift",
+    ],
+)
